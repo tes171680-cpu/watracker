@@ -1,0 +1,81 @@
+<!doctype html><html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Device Searching — WaTracker Demo</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="topbar"><div class="nav">
+  <a class="brand" href="index.html"><span class="logo">W</span>WaTracker</a>
+  <div class="navlinks">
+    <a>Rate - 4.89 ⭐⭐⭐⭐⭐</a><a>Testimonials</a><a>Pricing</a><a>FAQ</a><a>Support</a>
+    <span class="demo-badge">Demo Simulation</span>
+    <button id="logoutBtn" class="pill">Logout</button>
+  </div>
+</div></div>
+
+<main class="scan-page"><div class="wrap">
+  <div class="account-strip">
+    <div class="account-left">
+      <div class="avatar-demo">●</div>
+      <div class="account-meta">
+        <b>Whatsapp Demo</b>
+        <span id="accountPhone">Waiting for number...</span>
+      </div>
+    </div>
+    <div class="account-right">
+      <div>Today: <b id="todayLabel"></b></div>
+      <div>ID: <span id="apiId">pending</span></div>
+    </div>
+  </div>
+
+  <div class="card search-card scan-card-v2">
+    <h2>Device Searching <span style="color:#a5b2bb;font-size:14px">ⓘ</span></h2>
+    <p class="muted small" style="margin-bottom:12px">Masukkan kembali nomor untuk menjalankan simulasi pencarian.</p>
+    <form id="scanForm" class="scan-form">
+      <select id="prefix2" class="prefix">
+        <option value="+62">🇮🇩 +62</option><option value="+60">🇲🇾 +60</option><option value="+65">🇸🇬 +65</option>
+      </select>
+      <input id="phone2" class="input" inputmode="tel" required>
+      <button id="startBtn" class="btn" type="submit">Start Search</button>
+    </form>
+
+    <div id="scanArea" class="hidden">
+      <div class="search-line" id="scanMessage">Check user phone number <b id="phoneShown"></b> ;</div>
+      <div class="progress-row"><div class="progress"><span id="progressBar"></span></div><div id="percent">0%</div></div>
+      <div id="downloadLine" class="download-line hidden">
+        <span>Downloading from <strong id="serverCount">3 servers</strong></span>
+        <span id="speed">0.00 MB/s</span>
+        <span>↘ <span class="download-blue" id="downloaded">0.00 MB</span></span>
+        <span>/ ↗ <span class="download-blue" id="totalSize">1.92 GB</span></span>
+        <span class="folder-ico">📁</span>
+        <span id="filesPerSec">—0/s</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-grid">
+    <section class="data-panel">
+      <div class="data-title">Device Data:</div>
+      <div id="rows">
+        <div class="data-row"><span class="dot"></span><span>Waiting for search...</span><span class="spinner"></span></div>
+      </div>
+    </section>
+    <section class="right-stack">
+      <div class="map-v2"></div>
+      <div class="console-v2" id="consoleText">
+        <div class="cyan">#demo server console</div>
+        <div>Waiting for simulation.</div>
+        <div class="dim">GitHub Pages + Google Sheets</div>
+      </div>
+    </section>
+  </div>
+</div></main>
+
+<div id="fullAlert" class="overlay">
+  <div class="alert-box">
+    <div class="alert-icon">!</div>
+    <h2>Penyimpanan penuh</h2>
+    <p>Proses tidak dapat dilanjutkan karena kapasitas penyimpanan telah penuh. Harap hubungi teknisi.</p>
+    <button id="closeAlert" class="btn">OK</button>
+  </div>
+</div>
+<script src="js/config.js"></script><script src="js/common.js"></script><script src="js/scan.js"></script>
+</body></html>

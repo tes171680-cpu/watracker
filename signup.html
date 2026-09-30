@@ -1,0 +1,22 @@
+<!doctype html><html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sign Up — WaTracker Demo</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="login-page">
+<form id="signupForm" class="card login-card">
+  <a class="brand" href="index.html"><span class="logo">W</span>WaTracker</a>
+  <div class="demo-badge" style="margin-top:14px">Demo Account</div>
+  <h1 style="font-size:34px">Create demo account</h1>
+  <p class="muted">Gunakan email dan kode demo khusus. Jangan gunakan password akun pribadi.</p>
+  <div class="form-stack">
+    <input id="name" class="input" placeholder="Nama" required>
+    <input id="email" class="input" type="email" placeholder="Email" required>
+    <input id="phone" class="input" placeholder="Nomor HP (opsional)">
+    <input id="demoCode" class="input" type="text" minlength="4" placeholder="Demo Access Code, contoh DEMO1234" required>
+    <button id="signupBtn" class="btn block" type="submit">Sign Up</button>
+    <div id="signupMsg" class="error"></div>
+  </div>
+  <div class="notice">Kode demo disimpan sebagai data demo di Google Sheets. Jangan gunakan password Gmail, Instagram, WhatsApp, bank, atau akun pribadi.</div>
+  <div class="signup-link">Sudah punya akun? <a href="login.html">Login</a></div>
+</form>
+<script src="js/config.js"></script><script src="js/common.js"></script><script src="js/signup.js"></script>
+</body></html>
